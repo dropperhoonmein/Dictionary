@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-drag: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+}
+
+html::-webkit-scrollbar-track {
+    width: 5px;
+}
+
+html::-webkit-scrollbar-thumb {
+    width: 5px;
+    background-color: #000000;
+    border-radius: 5px;
+}
+
+header {
+    width: 100%;
+    height: 40vh;
+    background: #000000 url(media\\banner.svg) left no-repeat;
+    background-size: auto 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputBox {
+    width: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header input {
+    font-size: 2.8rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    width: 100%;
+}
+
+.inputBox button {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.inputBox button:active {
+    width: 35px;
+    height: 35px;
+    transition: 300ms ease-in-out;
+}
+.wordBox{
+    width: 90%;
+    margin-top: 50px;
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+.wordBox h2{
+    display: inline-block;
+    font-size: 2rem;
+    border-bottom: 2px solid black;
+}
+.wordBox button{
+    margin-left: 30px;
+    cursor: pointer;
+    height: 25px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.wordBox button img{
+    height: 100%;
+}
+
+.nounBox{
+    width: 85%;
+    margin: 50px auto;
+}
+.nounBox h3{
+    margin: 15px 5px;
+}
+.nounBox p{
+    margin: 15px 5px;
+}
+.using{
+    border-left: 5px solid rgb(175, 175, 175);
+    padding-left: 10px;
+}
+.synonym{
+    border-left: 5px solid rgb(255 196 74);
+    padding-left: 10px;
+}
+
+@media (max-width:1050px) {
+    .inputBox {
+        width: 60%;
+    }
+}
+@media (max-width:800px) {
+    .inputBox {
+        width: 75%;
+    }
+}
+@media (max-width:500px) {
+    .inputBox {
+        width: 85%;
+    }
+    header{
+        height: 30vh;
+    }
+    header input {
+        font-size: 2rem;
+    }
+    .inputBox button{
+        width: 35px;
+        height: 35px;
+    }
+    .inputBox button:active {
+        width: 32px;
+        height: 32px;
+        transition: 300ms ease-in-out;
+    }
+}
+@media (max-width:400px) {
+    .inputBox {
+        width: 90%;
+    }
+    header{
+        height: 25vh;
+    }
+    header input {
+        font-size: 1.8rem;
+    }
+    .inputBox button{
+        width: 35px;
+        height: 35px;
+    }
+    .inputBox button:active {
+        width: 32px;
+        height: 32px;
+        transition: 300ms ease-in-out;
+    }
+}

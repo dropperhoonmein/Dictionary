@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    </style>
+    <link rel="shortcut icon" href="media\icon.jpg" type="image/jpg">
+</head>
+
+<body>
+    <header>
+        <div class="inputBox">
+            <input type="text" name="" id="inputData"> <button id="searchBtn"><a href="#main"><img
+                        src="media\search-solid.svg"></a></button>
+        </div>
+    </header>
+    <main id="main">
+        <div class="wordBox">
+            <h2 id="word">Default</h2>
+            <button id="audioBtn"><img src="media\audio img.png"></button>
+        </div>
+        <section id="container">
+            <div class="nounBox">
+                <h3>Noun</h3>
+                <p>The condition of failing to meet an obligation.</p>
+                <p></p>
+                <p class="using">He failed to make payments on time and is now in <b>default</b>.</p>
+            </div>
+            <div class="nounBox">
+                <h3>Verb</h3>
+                <p>To fail to meet an obligation.</p>
+                <p></p>
+                <p class="using">If you do not make your payments, you will <b>default</b> on your loan.
+                </p>
+            </div>
+        </section>
+        <template id="boxTemplate">
+            <div class="nounBox">
+                <h3></h3>
+                <p></p>
+                <p class="synonym"></p>
+                <p  class="using"></p>
+            </div>
+        </template>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
